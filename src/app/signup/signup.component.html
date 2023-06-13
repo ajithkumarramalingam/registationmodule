@@ -1,0 +1,46 @@
+  <form>
+    <h1>SignUp</h1>
+    <span class="p-float-label">
+    <input pInputText id="username" [(ngModel)]="username" [ngModelOptions]="{ standalone: true }" />
+    <label htmlFor="username">Username</label>
+    </span>
+
+    <span class="p-float-label">
+      <input pInputText id="email" [(ngModel)]="email" [ngModelOptions]="{ standalone: true }" />
+      <label htmlFor="email">Email</label>
+    </span>
+
+    <span class="p-float-label">
+     <p-password [(ngModel)]="password" [ngModelOptions]="{ standalone: true }" [feedback]="false" [toggleMask]="true"></p-password>
+     <label for="password">Password</label>
+    </span>
+    
+    <span class="p-float-label">
+      <input pInputText id="address" [(ngModel)]="address" [ngModelOptions]="{ standalone: true }" />
+      <label htmlFor="address">Address</label>
+    </span>
+    
+    <span class="p-float-label">
+      <p-dropdown [options]="dropdowdata1" optionValue="id" 
+      [(ngModel)]="state" (onChange)="onchange1($event)"
+      optionLabel="stateName" optionValue="value" [filter]="true" filterBy="stateName" 
+      [showClear]="false" placeholder="Select a State" 
+      [ngModelOptions]="{ standalone: true }" 
+      inputId="float-label"></p-dropdown>
+      <label for="float-label">Select a State</label>
+     </span>
+
+    <span class="p-float-label">
+      <p-dropdown [options]="dropdowdata" optionValue="id" 
+      [(ngModel)]="city" (onChange)="onchange($event)"
+      optionLabel="cityName" optionValue="value" [filter]="true" filterBy="cityName" 
+      [showClear]="false" placeholder="Select a City" 
+      [ngModelOptions]="{ standalone: true }" 
+      inputId="float-label1"></p-dropdown>
+      <label for="float-label">Select a City</label>
+     </span>
+
+     <p-button label="CREATE ACCOUNT" (click)="insertData()"></p-button>
+    </form>
+  
+

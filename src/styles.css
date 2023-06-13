@@ -1,0 +1,17 @@
+.p-inputtext {
+  width: 300px;
+}
+
+.p-dropdown {
+  width: 300px;
+}
+
+.p-inputtext {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.p-float-label .p-inputtext {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}/*# sourceMappingURL=styles.css.map */

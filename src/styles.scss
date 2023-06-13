@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+.p-inputtext {
+    width: 300px;
+}
+.p-dropdown {
+    width: 300px;
+}
+.p-inputtext {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.p-float-label {
+    .p-inputtext {
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+}

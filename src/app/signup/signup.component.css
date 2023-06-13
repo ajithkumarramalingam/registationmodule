@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+form h1 {
+  margin-bottom: 30px;
+}
+form .p-float-label {
+  width: 300px;
+  margin-bottom: 20px;
+}
+form .p-float-label input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+form .p-float-label label {
+  font-size: 14px;
+  color: #888;
+}
+form button[type=signup] {
+  width: 200px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=signup.component.css.map */

@@ -1,0 +1,14 @@
+<form>
+    <h1>Password</h1>
+<div>
+    <label for="password">New Password:</label>
+    <p-password [(ngModel)]="value" [ngModelOptions]="{standalone:true}" [toggleMask]="true"></p-password>
+</div>
+<div>
+    <label for="password">Confirm Password:</label>
+    <p-password [(ngModel)]="value" [ngModelOptions]="{standalone:true}" [toggleMask]="true"></p-password>
+</div>
+<div>
+    <button type="login">Send</button>
+</div>
+</form>
